@@ -1,14 +1,22 @@
-h1. !http://railsapps.github.com/images/rails-36x36.jpg(Rails App for a Startup Prelaunch Signup Site)! Rails App for a Startup Prelaunch Signup Site
+h1. This is a fork of the excellent "Rails Prelaunch Signup":http://railsapps.github.com/rails-prelaunch-signup project
 
-Rails 3.2 example application for a “beta launching soon” startup prelaunch signup site.
+by "DanielKehoe":https://github.com/DanielKehoe
 
 * "Rails Prelaunch Signup App":http://railsapps.github.com/rails-prelaunch-signup/ project page
 
 There's a "detailed tutorial":http://railsapps.github.com/tutorial-rails-prelaunch-signup.html to show how it is built. 
 
-Plus you can generate the complete app in about a minute using an application template.
+This fork reduces the steps needed to capture an email address. 
 
-!http://railsapps.github.com/images/xplaygrounds-screenshot.png(Rails Application for a Startup Prelaunch Signup Site)!
+The notable differences:
+* No more modals: Email capture is moved to the primary landing page (instead of a secondary modal)
+* Design tweaks: Seems everyone wants a giant headline these days. Added copy placeholders.
+* Does not use social sharing buttons (might add later)
+* Uses erb instead of haml (but not all pages converted to erb)
+
+Notes:
+* I'm not going to win any coding challenge awards (n00b), so proceed with caution. You'll find a few hacks in here, but most are labeled as such.
+* If you want ongoing support, I strongly recommend you fork the "original project":http://railsapps.github.com/rails-prelaunch-signup and merge in my additions
 
 h4. Sites Using the App
 
@@ -573,17 +581,21 @@ Send the author a message, create an "issue":http://github.com/RailsApps/rails-p
 
 If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
 
+Screenshots:
+!https://github.com/chadokruse/rails-prelaunch-signup-1click/raw/master/screenshot-main.png(Landing Page)!
+!https://github.com/chadokruse/rails-prelaunch-signup-1click/raw/master/screenshot-error.png(Error State)!
+!https://github.com/chadokruse/rails-prelaunch-signup-1click/raw/master/screenshot-success.png(Success State)!
+
 h2. Credits
 
 Daniel Kehoe ("http://danielkehoe.com/":http://danielkehoe.com/) implemented the application and wrote the tutorial.
-
-Is the app useful to you? Follow the project on Twitter: "@rails_apps":http://twitter.com/rails_apps
-and tweet some praise. I'd love to know you were helped out by what I've put together.
+Chad Kruse ("http://www.chadkruse.com":http://www.chadkruse.com) converted it to 1click submit.
+Hat tip to "pseudomammal":http:github.com/pseudomammal for the tricky bug fixes.
 
 h2. MIT License
 
 "MIT License":http://www.opensource.org/licenses/mit-license
 
-Copyright © 2012 Daniel Kehoe
+Copyright © 2012 Daniel Kehoe, Chad Kruse
 
-!https://cruel-carlota.pagodabox.com/6ffdc588dd4075aa7827bd7806ed40f7(githalytics.com alpha)!
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
